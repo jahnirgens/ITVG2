@@ -1,9 +1,9 @@
 <div>
     <h1>Hent ut data fra NordPool strømpriser</h1>
-    <h2>Hent all data</h2>
-    <div id="demo3"></div><hr>
-    <div id="demo"></div><hr>
-    <div id="demo2"></div>
+    <h2>Hent all data i dag</h2>
+    <div id="demo3" class=""></div><hr>
+    <div id="demo" class="resultat"></div><hr>
+    <div id="demo2" class=""></div>
 </div>
 <script>
     document.getElementById("demo3").innerHTML = getDate(0);
