@@ -3,7 +3,7 @@
     <h2>Hent all data i dag, den <span id="dato" class=""></span></h2>
 </div>
 <div class="hoved_res">    
-    <div id="demo" class="resultat"></div>
+    <div id="all_data" class="resultat"></div>
     <div id="demo2" class=""></div>
 </div>
 <script>
@@ -30,7 +30,7 @@
             };
             req.send();
         });
-        document.getElementById("demo").innerHTML = await myPromise;
+        document.getElementById("all_data").innerHTML = await myPromise;
     }
     
     //Dato
