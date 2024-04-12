@@ -11,16 +11,18 @@
         'menu main main main main right'
         'footer footer footer footer footer footer';
     gap: 0px;
-    background-color: #f3f4f5;
     padding: 0px;
+    margin: 0px;
 }
 
 .grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 0px 0;
-    font-size: 20px;
+    padding: 0px 0px;
     width: 100%;
+}
+
+h1, h2, h3{
+    margin: 0;
 }
 
 ul.topMenu {
@@ -58,17 +60,18 @@ body{
 
 /* vertikal menu*/
 ul.sideMenu {
-    list-style-type: circle;
+    list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding:0px;
     width: 200px;
     background-color: #f1f1f1;
+    box-sizing: border-box;
   }
   
 ul.sideMenu a {
     display: block;
     color: #000;
-    padding: 8px 16px;
+    padding: 4px 22px;
     text-decoration: none;
 }
 

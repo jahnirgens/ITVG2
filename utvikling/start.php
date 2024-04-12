@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="../hoved.css">
     <link rel="stylesheet" href="../hovedSide.css">
+    <link rel="stylesheet" href="../sideMenu.css">
   </head>
   <body>
     <div class="grid-container">
