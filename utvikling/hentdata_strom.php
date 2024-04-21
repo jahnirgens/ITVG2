@@ -10,7 +10,7 @@
     <h2>Vise timepriser i tabell<span id="dato" class=""></span></h2>
 </div>
 <div class="hoved_res">    
-    <div id="pris_tabell" class="flex-container"></div>
+    <div id="pris_tabell" class="flex-container resultat"></div>
 </div>
 
 <script>
@@ -32,27 +32,20 @@
 
     function tabell(x){
         myArray = x.split("{");
-        //document.getElementById("pris_tabell").innerHTML = myArray[2];
- 
-        for(var i =0; i< myArray.length; i++){
-            //$('#pris_tabell').append('<div id="r'+ i +'" style="" class="box">A</div>');
-            myArray[i] = myArray[i].slice(14,19);
+        for(var i =1; i< myArray.length; i++){
             let para = document.createElement("div");
-            para.innerHTML = "This is a paragraph.";
-            document.getElementById("pris_tabell").appendChild(para);
-            //document.getElementById('pris_tabell').innerHTML = myArray[i];
-
-
-        }
-/*
-        for (let i=1; i<myArray.length; i++){
+            j = i - 1;
+            priser = myArray[i].slice(14,19);0
+            para.innerHTML = "<div style='font-size:14px;'>Klokken " + j + " - " + i + "<br></div>" + priser;
+           
+            if(true){
+                document.getElementById("pll").aris_tabeppendChild(para);
+            }
+            else{
+                document.getElementById("pris_tabell").appendChild(para);
+            }
             
-            //myArray[i] = x.slice(16,20);  
-            
-            document.getElementById("pris_tabell").innerHTML = x[i];
-        }
-*/        
-        
+        }       
     }
 
     //Henter priser med mva og nettleie

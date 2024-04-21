@@ -5,6 +5,8 @@
     margin: 0px;
     padding:7px;
 }
+
+
 h1{
     margin:10px 0px;
     text-align: center;
@@ -15,16 +17,17 @@ h2{
 }
 .flex-container {
     display: flex;
-    align-items: stretch;
+    flex-wrap: wrap;
     background-color: #f1f1f1;
+    flex:100%;
 }
   
 .flex-container>div {
-    background-color: DodgerBlue;
+    background-color: rgb(116, 117, 118);
     color: white;
-    width: 100px;
+    width: 120px;
     margin: 10px;
     text-align: center;
-    line-height: 75px;
+    line-height: 40px;
     font-size: 30px;
 }
