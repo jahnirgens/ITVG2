@@ -34,9 +34,14 @@
         myArray = x.split("{");
         //document.getElementById("pris_tabell").innerHTML = myArray[2];
  
-        for(var i =1; i<= 10; i++){
-            $('#pris_tabell').append('<div id="r'+ i +'" style="" class="box">A</div>')
-            document.getElementById('r'+i).innerHTML = myArray[2];
+        for(var i =0; i< myArray.length; i++){
+            //$('#pris_tabell').append('<div id="r'+ i +'" style="" class="box">A</div>');
+            myArray[i] = myArray[i].slice(14,19);
+            let para = document.createElement("div");
+            para.innerHTML = "This is a paragraph.";
+            document.getElementById("pris_tabell").appendChild(para);
+            //document.getElementById('pris_tabell').innerHTML = myArray[i];
+
 
         }
 /*
