@@ -10,7 +10,7 @@
     <h2>Vise timepriser i tabell<span id="dato" class=""></span></h2>
 </div>
 <div class="hoved_res">    
-    <div id="pris_tabell" class="resultat"></div>
+    <div id="pris_tabell" class="flex-container"></div>
 </div>
 
 <script>
